@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pengajuan</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    background:#fff7f3;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    min-height:100vh;
+    padding:25px 18px;
+    display:flex;
+    flex-direction:column;
+}
+
+.header{
+    padding:12px 4px 25px;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:800;
+    color:#EE4D2D;
+    letter-spacing:-1px;
+}
+
+.subtitle{
+    color:#777;
+    font-size:13px;
+    margin-top:6px;
+}
+
+/* POSTER */
+
+.poster{
+    width:100%;
+    overflow:hidden;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(70,35,20,.08);
+}
+
+.poster img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+/* CONTENT */
+
+.content{
+    margin-top:25px;
+    text-align:center;
+}
+
+.content h2{
+    font-size:23px;
+    color:#252525;
+    line-height:1.4;
+}
+
+.content p{
+    color:#777;
+    font-size:14px;
+    line-height:1.6;
+    margin-top:10px;
+}
+
+/* BUTTON */
+
+.button-wrap{
+    margin-top:25px;
+}
+
+.btn-ajukan{
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:12px;
+    background:#EE4D2D;
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+    box-shadow:0 5px 14px rgba(238,77,45,.22);
+}
+
+.btn-ajukan:active{
+    transform:scale(.98);
+}
+
+.footer{
+    margin-top:auto;
+    padding-top:30px;
+    text-align:center;
+    color:#aaa;
+    font-size:11px;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+  
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+    <img src="assets/spay-logo.png" alt="Logo" class="logo">
+</header>
+
+    <!-- POSTER -->
+    <div class="poster">
+        <img src="assets/poster.png" alt="Poster informasi pengajuan pinjaman">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h2>Ajukan Pinjaman Anda</h2>
+        <p>
+            Pelajari informasi pinjaman, persyaratan,
+            bunga, biaya, dan ketentuan pembayaran
+            sebelum mengajukan.
+        </p>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="button-wrap">
+        <button class="btn-ajukan"
+            onclick="window.location.href='form.html'">
+            Ajukan Pinjaman
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
