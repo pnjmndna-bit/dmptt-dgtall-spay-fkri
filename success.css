@@ -372,3 +372,24 @@ body.fade-out{
     display:block;
     filter:brightness(0) invert(1);
 }
+
+/* ========================= */
+/* IMAGE CARD */
+/* ========================= */
+
+.card{
+    width:100%;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    padding:5px;
+    position:relative;
+}
+
+.photo-image{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:12px;
+    object-fit:contain;
+}
